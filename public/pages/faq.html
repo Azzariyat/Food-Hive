@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - FoodHive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../css/faq.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <button class="back-btn" onclick="goBack()" title="Kembali">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <!-- Main Content -->
+    <div class="faq-container">
+        <!-- Header -->
+        <div class="faq-header">
+     <img src="../images/faq.png" alt="FAQ Icon" style="max-width: 300px; margin-bottom: 20px;">
+    </div>
+
+        <!-- FAQ Items -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+                Bagaimana cara memastikan kualitas makanan yang didonasikan?
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+                <p>FoodHive menerapkan kebijakan bahwa hanya makanan yang masih layak konsumsi, belum melewati tanggal kedaluwarsa, dan dikemas dengan baik yang dapat didonasikan. Setiap donatur wajib mencantumkan detail makanan serta mengunggah foto sebagai bentuk transparansi. Penerima juga dapat memberikan ulasan untuk membantu menjaga standar kualitas donasi.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+                Apakah saya bisa mendonasikan makanan siap saji?
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Ya, makanan siap saji dapat didonasikan selama masih dalam kondisi higienis, belum dikonsumsi sebagian, dan dikemas dengan aman. Donatur disarankan untuk segera menginformasikan waktu kadaluwarsa atau waktu terbaik untuk dikonsumsi agar penerima dapat menyesuaikan.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+                Bagaimana sistem pengiriman/pengambilan makanan bekerja?
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+                <p>FoodHive berfungsi sebagai platform penghubung antara donatur dan penerima. Setelah terjadi pencocokan, pengguna dapat memilih untuk mengatur pengambilan secara mandiri atau bekerja sama dengan komunitas pengantaran sukarela yang tersedia di wilayah tersebut.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+                Apa saja jenis organisasi yang dapat menjadi penerima donasi?
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Organisasi seperti panti asuhan, rumah singgah, komunitas sosial, dan lembaga kemanusiaan lainnya dapat mendaftar sebagai penerima donasi, selama mereka melalui proses verifikasi dan validasi identitas yang disediakan oleh platform.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+                Bagaimana FoodHive memastikan keamanan data pengguna?
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+                <p>FoodHive menggunakan sistem verifikasi dan enkripsi data untuk menjaga keamanan informasi pribadi pengguna. Semua data yang diunggah akan disimpan dengan aman dan hanya digunakan untuk keperluan operasional platform sesuai dengan kebijakan privasi yang berlaku.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FAQ JavaScript -->
+    <script src="../js/faq.js"></script>
+</body>
+</html>

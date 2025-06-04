@@ -1,0 +1,320 @@
+:root {
+    --primary-green: #2D5A3D;
+    --light-green: #4CAF50;
+    --orange: #FF9800;
+    --light-blue: #E3F2FD;
+    --green: #E8F5E8;
+    --text-gray: #666;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 80px;
+    background-color: #E8F5E8;
+}
+
+/* Main Content */
+.main-content {
+    min-height: calc(100vh - 80px);
+    padding: 60px 0 80px;
+}
+
+/* Header Section */
+.header-section {
+    text-align: left;
+    margin-bottom: 60px;
+    max-width: 600px;
+}
+
+.header-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--orange);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.header-section .text-primary {
+    color: var(--orange) !important;
+}
+
+.header-section .lead {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Partners Grid */
+.partners-grid {
+    margin-top: 40px;
+}
+
+/* Partner Card */
+.partner-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.partner-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.partner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.partner-card:hover .partner-image img {
+    transform: scale(1.05);
+    
+}
+
+.partner-info {
+    padding: 20px;
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+    color: white;
+    position: relative;
+}
+
+.partner-info h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.partner-info p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.partner-info i {
+    margin-right: 8px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Donate Button */
+.btn-donate {
+    background: var(--orange);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-donate:hover {
+    background: #F57C00;
+    transform: scale(1.05);
+}
+
+/* Partner Details (Hidden by default) */
+.partner-details {
+    background: rgba(45, 90, 61, 0.95);
+    color: white;
+    padding: 15px 20px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.partner-card:hover .partner-details {
+  opacity: 1;
+    max-height: 200px;
+}
+
+.partner-details p {
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.partner-details p:last-child {
+    margin-bottom: 0;
+}
+
+.partner-details strong {
+    color: #FFD54F;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .header-section .lead {
+        font-size: 1rem;
+    }
+    
+    .partner-image {
+        height: 180px;
+    }
+    
+    .partner-info {
+        padding: 15px;
+    }
+    
+    .partner-info h5 {
+        font-size: 1.1rem;
+    }
+    
+    .main-content {
+        padding: 40px 0 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-section h1 {
+        font-size: 2rem;
+    }
+    
+    .partner-image {
+        height: 160px;
+    }
+    
+    .partners-grid .row {
+        margin-bottom: 20px;
+    }
+}
+
+/* Animation for cards appearing */
+.partner-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.partner-card:nth-child(1) { animation-delay: 0.1s; }
+.partner-card:nth-child(2) { animation-delay: 0.2s; }
+.partner-card:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navbar Active State */
+.navbar-nav .nav-link.active {
+    color: var(--primary-green) !important;
+    font-weight: 600;
+}
+
+/* Footer Adjustments */
+footer {
+    margin-top: 80px;
+}
+
+/* Mobile Touch Enhancements */
+.partner-card.touch-active {
+    transform: translateY(-3px) scale(1.01);
+    transition: transform 0.1s ease;
+}
+
+@media (max-width: 768px) {
+    .partner-details.mobile-show {
+        transform: translateY(0) !important;
+    }
+    
+    .partner-card:focus {
+        outline: 2px solid var(--orange);
+        outline-offset: 2px;
+    }
+}
+
+/* Search functionality (if added later) */
+.search-container {
+    margin-bottom: 30px;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 3px rgba(45, 90, 61, 0.1);
+}
+
+/* Accessibility improvements */
+.partner-card:focus-visible {
+    outline: 3px solid var(--orange);
+    outline-offset: 2px;
+}
+
+/* Image loading states */
+.partner-image img {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.partner-image img[src] {
+    opacity: 1;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .partner-card {
+        border: 2px solid #000;
+    }
+    
+    .partner-info {
+        background: #000 !important;
+        color: #fff !important;
+    }
+    
+    .btn-donate {
+        background: #000 !important;
+        border: 2px solid #fff;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .partner-card,
+    .partner-image img,
+    .partner-details,
+    .btn-donate {
+        transition: none !important;
+        animation: none !important;
+    }
+    
+    .partner-card:hover {
+        transform: none !important;
+    }
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodHive - Kurangi Food Waste, Bagikan Kebaikan</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <div id="header"></div>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-section" style="margin-top: 76px; background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%); min-height: 100vh; display: flex; align-items: center">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Kolom Kiri - Teks -->
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <div class="hero-badge mb-3">
+                <span class="badge bg-warning text-dark rounded-pill px-3 py-2"> </span>
+              </div>
+              <h1 class="display-4 climate-crisis" style="color: #167a4e; font-size: 36px">
+                Selamatkan Makanan.<br />Bantu Sesama.<br />
+                Jaga Bumi.
+              </h1>
+              <p class="lead mb-4" style="color: #666">Makanan Anda terlalu berharga untuk dibuang. Bagikan kelebihan makanan Anda dan berikan dampak nyata bagi lingkungan dan masyarakat.</p>
+              <div class="hero-actions">
+                <a href="pages/register.html" class="btn btn-success btn-lg rounded-pill px-4 me-3"> Yuk Mulai Donasi! </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan - Gambar -->
+          <div class="col-lg-6 text-center">
+            <img src="images/foodbag.png" alt="Food Bag" class="img-fluid" style="max-width: 100%" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Can You Donate Section -->
+    <section id="mulai" class="py-5" style="background-color: #fff0f0">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="climate-crisis" style="color: #e5924a">Apa yang Bisa Kamu Donasikan?</h2>
+          <p class="lead" style="color: #333">Berbagi itu Mudah, Asalkan Tahu Apa yang Layak</p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper donation-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="donasi-card">
+                <div class="card-image-container">
+                  <img src="/images/nasi.png" alt="Makanan Siap Saji" class="donasi-img" />
+                  <div class="card-overlay">
+                    <div class="card-content">
+                      <h5 class="fw-bold text-white mb-3">Makanan Siap Saji Berlebih</h5>
+                      <p class="text-white mb-4">Dari acara atau dapur rumahmu yang masih utuh dan lezat.</p>
+                      <a href="../pages/donation.html" class="btn btn-warning rounded-pill px-4 py-2 fw-semibold">Yuk Mulai Donasi</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="donasi-card">
+                <div class="card-image-container">
+                  <img src="/images/roti.png" alt="Roti & Kue" class="donasi-img" />
+                  <div class="card-overlay">
+                    <div class="card-content">
+                      <h5 class="fw-bold text-white mb-3">Roti & Kue dari Toko</h5>
+                      <p class="text-white mb-4">Hari ini nggak laku, tapi masih nikmat untuk esok pagi.</p>
+                      <a href="../pages/donation.html" class="btn btn-warning rounded-pill px-4 py-2 fw-semibold">Yuk Mulai Donasi</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="donasi-card">
+                <div class="card-image-container">
+                  <img src="/images/sayur.png" alt="Buah & Sayur" class="donasi-img" />
+                  <div class="card-overlay">
+                    <div class="card-content">
+                      <h5 class="fw-bold text-white mb-3">Buah & Sayur Tak Sempurna</h5>
+                      <p class="text-white mb-4">Bentuknya aneh? Tidak masalah. Nutrisinya tetap luar biasa.</p>
+                      <a href="../pages/donation.html" class="btn btn-warning rounded-pill px-4 py-2 fw-semibold">Yuk Mulai Donasi</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="donasi-card">
+                <div class="card-image-container">
+                  <img src="/images/chiki.png" alt="Stok Makanan" class="donasi-img" />
+                  <div class="card-overlay">
+                    <div class="card-content">
+                      <h5 class="fw-bold text-white mb-3">Stok Makanan Kemasan</h5>
+                      <p class="text-white mb-4">Sebelum kedaluwarsa, kirimkan pada yang membutuhkan.</p>
+                      <a href="../pages/donation.html" class="btn btn-warning rounded-pill px-4 py-2 fw-semibold">Yuk Mulai Donasi</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <div class="donasi-card">
+                <div class="card-image-container">
+                  <img src="/images/minuman.png" alt="Minuman Segar" class="donasi-img" />
+                  <div class="card-overlay">
+                    <div class="card-content">
+                      <h5 class="fw-bold text-white mb-3">Minuman Segar dalam Kemasan</h5>
+                      <p class="text-white mb-4">Masih tersegel, masih bisa melegakan dahaga.</p>
+                      <a href="../pages/donation.html" class="btn btn-warning rounded-pill px-4 py-2 fw-semibold">Yuk Mulai Donasi</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Navigation Buttons -->
+        <div class="text-center mt-4">
+          <button class="btn btn-success rounded-pill me-2 custom-prev-btn">← Swipe</button>
+          <button class="btn btn-success rounded-pill custom-next-btn">Swipe →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Most Searched Donations -->
+    <section class="most-searched-donations py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Kolom Gambar Scrollable -->
+          <div class="col-lg-6 image-column">
+            <div class="scrollable-images">
+              <div class="image-wrapper">
+                <img src="/images/sushi.png" alt="Food Donations" class="img-fluid w-100" />
+              </div>
+              <div class="image-wrapper">
+                <img src="/images/nasi.png" alt="Food Donations" class="img-fluid w-100" />
+              </div>
+              <div class="image-wrapper">
+                <img src="/images/roti.png" alt="Food Donations" class="img-fluid w-100" />
+              </div>
+              <div class="image-wrapper">
+                <img src="/images/sayur.png" alt="Food Donations" class="img-fluid w-100" />
+              </div>
+            </div>
+            <!-- Tombol Populer -->
+            <div class="mt-3 d-flex justify-content-start">
+              <span class="btn-populer">
+                <span class="btn-populer-inner">Populer</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Kolom Teks -->
+          <div class="col-lg-6 text-column text-start">
+            <h2 class="title fw-bold mb-4">
+              Donasi <br />
+              Terbaru & <br />
+              Paling Dicari!
+            </h2>
+            <p class="lead description mb-4">
+              <strong
+                >Makanan paling banyak dicari dan <br />
+                baru saja didonasikan! Jangan <br />
+                sampai terlewat.</strong
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="teman" class="py-5" style="background-color: #fceaea">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold" style="color: #2d5a3d; font-family: 'Verdana'; font-size: 2.5rem">Donatur FoodHive</h2>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-5">
+            <div class="d-flex align-items-center p-3 rounded shadow-sm bg-success text-white">
+              <img src="images/mako.png" alt="Mako Cake & Bakery" class="rounded-circle me-3" style="width: 80px; height: 80px; object-fit: cover" />
+              <div>
+                <h5 class="fw-bold mb-1">Mako Cake & Bakery</h5>
+                <p class="mb-0 small">Jenis Produk: Roti, kue ulang tahun, cake, pastry</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-5">
+            <div class="d-flex align-items-center p-3 rounded shadow-sm bg-success text-white">
+              <img src="images/alfamart.png" alt="Alfamart" class="rounded-circle me-3" style="width: 80px; height: 80px; object-fit: cover" />
+              <div>
+                <h5 class="fw-bold mb-1">Alfamart</h5>
+                <p class="mb-0 small">Jenis Produk: Makanan kemasan, roti, susu, minuman</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-5">
+            <div class="d-flex align-items-center p-3 rounded shadow-sm bg-success text-white">
+              <img src="images/suzuya.png" alt="Suzuya Banda Aceh" class="rounded-circle me-3" style="width: 80px; height: 80px; object-fit: cover" />
+              <div>
+                <h5 class="fw-bold mb-1">Suzuya Banda Aceh</h5>
+                <p class="mb-0 small">Jenis Produk: Buah dan sayur, roti, produk susu, makanan kemasan</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-5">
+            <div class="d-flex align-items-center p-3 rounded shadow-sm bg-success text-white">
+              <img src="images/canaimamakkl.png" alt="Canai Mamak KL" class="rounded-circle me-3" style="width: 80px; height: 80px; object-fit: cover" />
+              <div>
+                <h5 class="fw-bold mb-1">Canai Mamak KL</h5>
+                <p class="mb-0 small">Jenis Makanan: Roti canai, nasi goreng, mie goreng, makanan Malaysia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tombol Daftar -->
+        <div class="text-center mt-4">
+          <a href="../pages/daftarmitra.html" class="btn btn-warning rounded-pill px-4">Daftar Mitra</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Statistics -->
+    <section class="py-5" style="background-color: #fceaea">
+      <div class="container text-center">
+        <!-- Logo FoodHive Impact -->
+        <div class="mb-4">
+          <img src="images/logoimpact.png" alt="FoodHive Impact" style="max-height: 60px" />
+        </div>
+
+        <!-- Statistik -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-8 col-md-10">
+            <div class="p-4 rounded" style="background-color: rgba(255, 255, 255, 0.6); backdrop-filter: blur(4px); border-radius: 20px">
+              <div class="row text-start align-items-center">
+                <div class="col-6">
+                  <p class="fw-bold" style="font-size: 1.8rem; color: #2d5a3d">70.000+</p>
+                  <p class="fw-bold" style="font-size: 1.8rem; color: #2d5a3d">1.500+</p>
+                  <p class="fw-bold" style="font-size: 1.8rem; color: #2d5a3d">20.000+Kg</p>
+                </div>
+                <div class="col-6">
+                  <p class="text-dark mb-3">Porsi tersalurkan</p>
+                  <p class="text-dark mb-3">Komunitas terbantu</p>
+                  <p class="text-dark mb-0">Food Waste terselamatkan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keterangan -->
+        <div class="col-lg-10 mx-auto">
+          <p class="text-dark small">Lihat dampak kontribusi Anda dalam angka. Dashboard interaktif menampilkan jumlah makanan yang diselamatkan dan sebaran bantuan di berbagai wilayah. Bersama, kita membuat perbedaan yang terukur.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+      // Memuat header.html
+      fetch('pages/header.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('header').innerHTML = data;
+        });
+
+      // Memuat footer.html
+      fetch('pages/footer.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

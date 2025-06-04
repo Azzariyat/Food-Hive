@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masuk - FoodHive</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body style="background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%); min-height: 100vh">
+    <div class="container-fluid">
+      <div class="row min-vh-100">
+        <!-- Kiri: Branding -->
+        <div class="col-lg-6 d-flex align-items-center justify-content-center p-5">
+          <div class="text-center">
+            <div class="brand-section mb-4">
+              <div class="welcome-badge mb-3">
+                <span class="badge bg-warning text-dark rounded-pill px-3 py-2"> Hello, Selamat Datang di </span>
+              </div>
+              <img src="../images/logo.png" alt="FoodHive Logo" class="mb-4" style="height: 80px" />
+              <p class="lead mb-4" style="color: #666">Kurangi Food Waste, Bagikan Kebaikan</p>
+            </div>
+            <div class="hero-image">
+              <img src="../images/foodbag.png" alt="Food Bag" class="img-fluid" style="max-width: 350px" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Kanan: Form Login -->
+        <div class="col-lg-6 d-flex align-items-center justify-content-center p-5">
+          <div class="auth-form w-100" style="max-width: 400px">
+            <div class="text-center mb-4">
+              <h3 class="fw-bold" style="color: #2d5a3d">Masuk ke Akun Anda</h3>
+            </div>
+
+            <!-- Area Alert -->
+            <div id="alertContainer"></div>
+
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold">Email</label>
+                <input type="email" id="email" name="email" class="form-control form-control-lg rounded-3" placeholder="Cth: xx@gmail.com" required />
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="form-label fw-semibold">Password</label>
+                <div class="position-relative">
+                  <input type="password" id="password" name="password" class="form-control form-control-lg rounded-3" placeholder="Password" required />
+                  <!-- Tombol toggle show/hide password -->
+                  <button type="button" id="togglePassword" class="position-absolute end-0 top-50 translate-middle-y" style="border: none; background: transparent; padding: 0 12px; height: 100%; display: flex; align-items: center">
+                    <i class="fas fa-eye-slash text-primary" id="eyeIcon"></i>
+                  </button>
+                </div>
+                <!-- Pesan error -->
+                <div id="passwordError" class="text-danger mt-1 small d-none">Password minimal 6 karakter</div>
+              </div>
+
+              <a href="../index.html" class="btn btn-success btn-lg w-100 rounded-3 mb-3"> Masuk </a>
+            </form>
+
+            <div class="text-center">
+              <p class="mb-0">
+                Belum punya akun?
+                <a href="register.html" class="text-decoration-none fw-semibold" style="color: #2d5a3d"> Daftar di sini </a>
+              </p>
+            </div>
+
+            <!-- Tombol Kembali -->
+            <div class="text-center mt-4">
+              <a href="../index.html" class="btn btn-outline-secondary rounded-pill"> <i class="fas fa-arrow-left me-2"></i>Kembali ke Beranda </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/auth.js"></script>
+  </body>
+</html>
