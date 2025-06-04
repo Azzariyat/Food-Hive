@@ -1,4 +1,4 @@
-// donation.js
+
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize form functionality
@@ -67,7 +67,7 @@ function handleFileUpload() {
             // Update upload area appearance
             uploadArea.style.borderColor = '#4CAF50';
             uploadArea.style.backgroundColor = '#f0f8f0';
-            uploadLabel.innerHTML = `<i class="fas fa-check me-2"></i>${file.name}`;
+            uploadLabel.innerHTML = <i class="fas fa-check me-2"></i>${file.name};
             uploadLabel.style.color = '#4CAF50';
             
             // Preview image (optional)
@@ -213,7 +213,7 @@ function validateForm() {
     }
     
     if (!isValid) {
-        alert(`Mohon lengkapi field berikut:\n• ${errors.join('\n• ')}`);
+        alert(Mohon lengkapi field berikut:\n• ${errors.join('\n• ')});
     }
     
     return isValid;
@@ -234,14 +234,19 @@ function hideLoadingState() {
 }
 
 function showSuccessModal() {
-    const modal = new bootstrap.Modal(document.getElementById('successModal'));
+    const modalElement = document.getElementById('successModal');
+    const modal = new bootstrap.Modal(modalElement);
     modal.show();
-    
-    // Auto close modal after 3 seconds
+
+    // Setelah 3 detik, sembunyikan modal dan redirect
     setTimeout(() => {
         modal.hide();
+        setTimeout(() => {
+            window.location.href = 'riwayatdonasi.html';
+        }, 300);
     }, 3000);
 }
+
 
 function resetForm() {
     // Reset all form inputs
@@ -360,9 +365,9 @@ function saveFormData() {
     
     inputs.forEach((input, index) => {
         if (input.type === 'checkbox') {
-            formData[`input_${index}`] = input.checked;
+            formData[input_${index}] = input.checked;
         } else if (input.type !== 'file') {
-            formData[`input_${index}`] = input.value;
+            formData[input_${index}] = input.value;
         }
     });
     
@@ -376,7 +381,7 @@ function loadFormData() {
         const inputs = document.querySelectorAll('.form-control, .form-check-input');
         
         inputs.forEach((input, index) => {
-            const savedValue = window.tempFormData[`input_${index}`];
+            const savedValue = window.tempFormData[input_${index}];
             if (savedValue !== undefined) {
                 if (input.type === 'checkbox') {
                     input.checked = savedValue;

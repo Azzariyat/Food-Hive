@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Donasi - FoodHive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/riwayatdonasi.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+    <!-- Header -->
+   <nav class="navbar">
+        <div class="nav-container">
+            <div><img src="../images/logo_FoodHive.png" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="../pages/dashboard.html">Beranda</a></li>
+                <li><a href="../pages/tentangkami.html">Tentang Kami</a></li>
+                <li><a href="../pages/donation.html">Mulai Berbagi</a></li>
+                <li><a href="../pages/temanfh.html">Teman FoodHive</a></li>
+                <li><a href="../pages/faq.html">FAQ</a></li>
+            </ul>
+            <a href="../pages/profile.html"> <img src="../images/profile.png" alt="profile"></a>
+           
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                   <div class="text-center mb-4">
+                    <img src="../images/riwayatdonasi.png" alt="FoodHive-riwayat" style="width: 300px; height: auto;" />
+                </div>
+
+                    <!-- Alert untuk status belum diterima -->
+                    <div id="contactAdminAlert" class="alert alert-warning alert-dismissible fade" role="alert">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <strong>Perhatian!</strong> Ada donasi yang belum diterima. Silakan hubungi admin untuk informasi lebih lanjut.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+
+                    <!-- Donation History Cards -->
+                    <div class="donation-history">
+                        <!-- Donasi 1 - Sudah Diterima -->
+                        <div class="donation-card mb-4">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="donation-name mb-0">Nasi Kotak</h5>
+                                    <span class="status-badge status-received">
+                                        <i class="fas fa-check-circle me-1"></i>
+                                        Sudah Diterima
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="info-item">
+                                            <span class="info-label">Nama Donatur:</span>
+                                            <span class="info-value">Michael John</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="info-label">Jenis Makanan:</span>
+                                            <span class="info-value">Makanan Siap Saji</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="info-label">Jumlah Porsi:</span>
+                                            <span class="info-value">25 porsi</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-item">
+                                            <span class="info-label">Tanggal Kadaluarsa:</span>
+                                            <span class="info-value">30 Mei 2025</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="info-label">Lokasi:</span>
+                                            <span class="info-value">Banda Aceh</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="info-label">Diterima Oleh:</span>
+                                            <span class="info-value">Panti Asuhan Harapan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <small class="text-success">
+                                        <i class="fas fa-clock me-1"></i>
+                                        Diterima pada: 30 Mei 2025, 11:30 WIB
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Donasi 2 - Belum Diterima -->
+                        <div class="donation-card mb-4">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="donation-name mb-0">Roti dan Kue Sisa Toko</h5>
+                                    <span class="status-badge status-pending">
+                                        <i class="fas fa-clock me-1"></i>
+                                        Belum Diterima
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="info-item">
+                                            <span class="info-label">Nama Donatur:</span>
+                                            <span class="info-value">Azzariyat Azra</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="info-label">Jenis Makanan:</span>
+                                            <span class="info-value">Roti & Kue</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="info-label">Jumlah:</span>
+                                            <span class="info-value">2 kg</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-item">
+                                            <span class="info-label">Tanggal Kadaluarsa:</span>
+                                            <span class="info-value">6 Juni 2025</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="info-label">Lokasi:</span>
+                                            <span class="info-value">Lampineung</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="info-label">Status:</span>
+                                            <span class="info-value text-warning">Menunggu Penjemputan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <small class="text-muted">
+                                        <i class="fas fa-info-circle me-1"></i>
+                                        Donasi akan segera dijemput
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Admin Button -->
+                        <div class="text-center mt-4">
+                            <button class="btn btn-outline-success rounded-pill px-4" onclick="contactAdmin()">
+                                <i class="fas fa-phone me-2"></i>
+                                Hubungi Admin
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5 text-dark" style="background: #e6f7f8; position: relative; overflow: hidden;">
+        <!-- Background Gelombang -->
+        <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../images/footer.png') no-repeat top center;
+            background-size: cover;
+            z-index: 0;">
+        </div>
+
+        <div class="container position-relative" style="z-index: 1;">
+            <div class="row">
+                <!-- Logo + Slogan -->
+                <div class="col-md-4 mb-4">
+                    <div class="mb-3">
+                        <img src="../images/logo.png" alt="FoodHive" style="max-width: 200px;">
+                    </div>
+                    <p class="text-success" style="font-weight: 500;">Bersama kurangi food waste, sebarkan kebaikan.</p>
+                </div>
+
+                <!-- Navigasi -->
+                <div class="col-md-4 mb-4">
+                    <ul class="list-unstyled">
+                        <li><strong>Beranda</strong></li>
+                        <li class="mt-2"><a href="../index.html#tentang" class="text-dark text-decoration-none">Tentang Kami</a></li>
+                        <li><a href="../index.html#mulai" class="text-dark text-decoration-none">Mulai Berbagi</a></li>
+                        <li><a href="../index.html#teman" class="text-dark text-decoration-none">Teman FoodHive</a></li>
+                        <li><a href="pages/faq.html" class="text-dark text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak -->
+                <div class="col-md-4 mb-4">
+                    <p><strong>Hubungi kami</strong></p>
+                    <p><i class="fas fa-phone-alt me-2 text-warning"></i> +62 5677 8943 33</p>
+                    <p><i class="fas fa-envelope me-2 text-warning"></i> foodhive@gmail.com</p>
+                    <div class="mt-3">
+                        <a href="#" class="me-3 text-warning"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-3 text-warning"><i class="fab fa-tiktok fa-lg"></i></a>
+                        <a href="#" class="text-warning"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/riwayatdonasi.js"></script>
+</body>
+</html>

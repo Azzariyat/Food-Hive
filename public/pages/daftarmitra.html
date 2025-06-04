@@ -1,36 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodHive - Bergabung Menjadi Teman FoodHive</title>
+    <link rel="stylesheet" href="../css/profile.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/daftarmitra.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet" />
   </head>
   <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="../index.html" style="color: #2d5a3d">
-          <img src="../images/logo.png" alt="FoodHive" height="40" class="me-2" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item"><a class="nav-link" href="../index.html#beranda">Beranda</a></li>
-            <li class="nav-item"><a class="nav-link" href="../pages/tentangkami.html">Tentang Kami</a></li>
-            <li class="nav-item"><a class="nav-link" href="../pages/temanfh.html">Mulai Berbagi</a></li>
-            <li class="nav-item"><a class="nav-link active" href=".html">Teman FoodHive</a></li>
-            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-          </ul>
-          <div class="navbar-nav">
-            <a class="btn btn-success rounded-pill px-4" href="login.html" id="loginBtn">Daftar/Masuk</a>
-          </div>
+    <nav class="navbar" >
+        <div class="nav-container">
+            <div style="margin: 20px auto; max-width: 1200px;  display: flex; justify-content: space-between; "><img  src="../images/logo_FoodHive.png" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="../pages/dashboard.html">Beranda</a></li>
+                <li><a href="../pages/tentangkami.html">Tentang Kami</a></li>
+                <li><a href="../pages/donation.html">Mulai Berbagi</a></li>
+                <li><a href="../pages/temanfh.html">Teman FoodHive</a></li>
+                <li><a href="../pages/faq.html">FAQ</a></li>
+            </ul>
+            <a href="../pages/profile.html"> <img src="../images/profile.png" alt="profile"></a>
+           
         </div>
-      </div>
     </nav>
 
     <!-- Main Content -->
@@ -40,8 +37,11 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-              <h1 class="hero-title">Bergabung Menjadi Teman FoodHive</h1>
-              <p class="hero-subtitle">Jadilah bagian dari gerakan sosial untuk mengurangi food waste dan membantu sesama. Mari bekerja bersama untuk ketahanan pangan yang lebih baik!</p>
+              <h1 class="hero-title climate-crisis">Bergabung Menjadi Teman FoodHive</h1>
+              <p class="hero-subtitle">
+                Jadilah bagian dari gerakan sosial untuk mengurangi food waste dan membantu sesama.
+                Mari bekerja bersama untuk ketahanan pangan yang lebih baik!
+              </p>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@
                         </div>
 
                         <div class="mb-4">
-                          <label for="kontakMitra" class="form-label">Kontak</label>
+                          <label for="noHandphone" class="form-label">Kontak</label>
                           <input type="tel" class="form-control" placeholder="Masukkan no hp" id="noHandphone" />
                         </div>
 
@@ -121,42 +121,50 @@
                 </div>
               </div>
 
-              <div class="success-message">
-                <p>Terima kasih telah mendaftar sebagai mitra FoodHive! Tim kami akan segera menghubungi Anda untuk memulai kolaborasi.</p>
+              <!-- Modal Sukses -->
+              <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content border-success">
+                    <div class="modal-header bg-success text-white">
+                      <h5 class="modal-title" id="successModalLabel">Pendaftaran Berhasil</h5>
+                      <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Mitra berhasil didaftarkan! Terima kasih telah mengisi formulir.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
+
+            </div> <!-- .col-lg-10 -->
+          </div> <!-- .row -->
+        </div> <!-- .container -->
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="py-5 text-dark" style="background: #e6f7f8; position: relative; overflow: hidden">
-      <!-- Background Gelombang -->
       <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('../images/footer.png') no-repeat top center; background-size: cover; z-index: 0"></div>
-
       <div class="container position-relative" style="z-index: 1">
         <div class="row">
-          <!-- Logo + Slogan -->
           <div class="col-md-4 mb-4">
             <div class="mb-3">
               <img src="../images/logo.png" alt="FoodHive" style="max-width: 200px" />
             </div>
-            <p class="text-success" style="font-weight: 500">Bersama kurangi food waste, sebarkan kebaikan.</p>
+            <p class="text-success fw-medium">Bersama kurangi food waste, sebarkan kebaikan.</p>
           </div>
-
-          <!-- Navigasi -->
           <div class="col-md-4 mb-4">
             <ul class="list-unstyled">
               <li><strong>Beranda</strong></li>
               <li class="mt-2"><a href="../index.html#tentang" class="text-dark text-decoration-none">Tentang Kami</a></li>
               <li><a href="../index.html#mulai" class="text-dark text-decoration-none">Mulai Berbagi</a></li>
               <li><a href="../index.html#teman" class="text-dark text-decoration-none">Teman FoodHive</a></li>
-              <li><a href="pages/faq.html" class="text-dark text-decoration-none">FAQ</a></li>
+              <li><a href="faq.html" class="text-dark text-decoration-none">FAQ</a></li>
             </ul>
           </div>
-
-          <!-- Kontak -->
           <div class="col-md-4 mb-4">
             <p><strong>Hubungi kami</strong></p>
             <p><i class="fas fa-phone-alt me-2 text-warning"></i> +62 5677 8943 33</p>

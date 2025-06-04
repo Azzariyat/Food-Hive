@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodHive - Kurangi Food Waste, Bagikan Kebaikan</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
     <link rel="icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="./css/profile.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +17,23 @@
   </head>
   <body>
     <!--Header-->
-    <div id="header"></div>
+   <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div><img src="../images/logo_FoodHive.png" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../pages/tentangkami.html">Tentang Kami</a></li>
+                <li><a href="../pages/donation.html">Mulai Berbagi</a></li>
+                <li><a href="../pages/temanfh.html">Teman FoodHive</a></li>
+                <li><a href="../pages/faq.html">FAQ</a></li>
+            </ul>
+           <div class="navbar-nav">
+        <a class="btn btn-success rounded-pill px-4" href="pages/login.html" id="loginBtn">Login/Masuk</a>
+      </div>
+           
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section id="beranda" class="hero-section" style="margin-top: 76px; background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%); min-height: 100vh; display: flex; align-items: center">
@@ -34,7 +51,7 @@
               </h1>
               <p class="lead mb-4" style="color: #666">Makanan Anda terlalu berharga untuk dibuang. Bagikan kelebihan makanan Anda dan berikan dampak nyata bagi lingkungan dan masyarakat.</p>
               <div class="hero-actions">
-                <a href="pages/register.html" class="btn btn-success btn-lg rounded-pill px-4 me-3"> Yuk Mulai Donasi! </a>
+                <a href="../public/pages/donation.html" class="btn btn-success btn-lg rounded-pill px-4 me-3"> Yuk Mulai Donasi! </a>
               </div>
             </div>
           </div>
@@ -48,7 +65,7 @@
     </section>
 
     <!-- What Can You Donate Section -->
-    <section id="mulai" class="py-5" style="background-color: #fff0f0">
+    <section id="mulai" class="py-5" style="background-color: #f0f8f0">
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="climate-crisis" style="color: #e5924a">Apa yang Bisa Kamu Donasikan?</h2>
@@ -177,13 +194,13 @@
           </div>
 
           <!-- Kolom Teks -->
-          <div class="col-lg-6 text-column text-start">
-            <h2 class="title fw-bold mb-4">
+          <div class="col-lg-6 text-column text-start" style="text-align: right">
+            <h2 class="title climate-crisis" style="text-align: right">
               Donasi <br />
               Terbaru & <br />
               Paling Dicari!
             </h2>
-            <p class="lead description mb-4">
+            <p class="lead description mb-4" style="text-align: right">
               <strong
                 >Makanan paling banyak dicari dan <br />
                 baru saja didonasikan! Jangan <br />
@@ -196,10 +213,10 @@
     </section>
 
     <!-- Partners Section -->
-    <section id="teman" class="py-5" style="background-color: #fceaea">
+    <section id="teman" class="py-5" style="background-color: #f0f8f0">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold" style="color: #2d5a3d; font-family: 'Verdana'; font-size: 2.5rem">Donatur FoodHive</h2>
+        <div class="text-center mb-5 climate-crisis">
+          <h2 class="climate-crisis" style="color: #2d5a3d; font-family: 'Verdana'; font-size: 2.5rem">Donatur FoodHive</h2>
         </div>
 
         <div class="row g-4 justify-content-center">
@@ -256,7 +273,7 @@
     </section>
 
     <!-- Impact Statistics -->
-    <section class="py-5" style="background-color: #fceaea">
+    <section class="py-5" style="background-color: #f0f8f0">
       <div class="container text-center">
         <!-- Logo FoodHive Impact -->
         <div class="mb-4">
@@ -266,17 +283,17 @@
         <!-- Statistik -->
         <div class="row justify-content-center mb-4">
           <div class="col-lg-8 col-md-10">
-            <div class="p-4 rounded" style="background-color: rgba(255, 255, 255, 0.6); backdrop-filter: blur(4px); border-radius: 20px">
+            <div class="p-4 rounded" style="background-color: #dff4f7; backdrop-filter: blur(4px); border-radius: 20px">
               <div class="row text-start align-items-center">
                 <div class="col-6">
-                  <p class="fw-bold" style="font-size: 1.8rem; color: #2d5a3d">70.000+</p>
-                  <p class="fw-bold" style="font-size: 1.8rem; color: #2d5a3d">1.500+</p>
-                  <p class="fw-bold" style="font-size: 1.8rem; color: #2d5a3d">20.000+Kg</p>
+                  <p class="fw-bold climate-crisis" style="font-size: 1.8rem; color: #2d5a3d">70.000+</p>
+                  <p class="fw-bold climate-crisis" style="font-size: 1.8rem; color: #2d5a3d">1.500+</p>
+                  <p class="fw-bold climate-crisis" style="font-size: 1.8rem; color: #2d5a3d">20.000+Kg</p>
                 </div>
                 <div class="col-6">
-                  <p class="text-dark mb-3">Porsi tersalurkan</p>
-                  <p class="text-dark mb-3">Komunitas terbantu</p>
-                  <p class="text-dark mb-0">Food Waste terselamatkan</p>
+                  <p class="text-dark mb-3 fw-bold" style="color: #2d5a3d;">Porsi tersalurkan</p>
+                  <p class="text-dark mb-3 fw-bold"  style="color: #2d5a3d;">Komunitas terbantu</p>
+                  <p class="text-dark mb-0 fw-bold"  style="color: #2d5a3d;">Food Waste terselamatkan</p>
                 </div>
               </div>
             </div>

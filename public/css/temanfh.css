@@ -9,15 +9,75 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 80px;
+   
     background-color: #E8F5E8;
+}
+
+.climate-crisis {
+  font-family: 'Climate Crisis', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'YEAR'  1979;
+}
+
+.climate-crisis {
+  font-family: 'Climate Crisis', sans-serif;
 }
 
 /* Main Content */
 .main-content {
-    min-height: calc(100vh - 80px);
-    padding: 60px 0 80px;
+    min-height: calc(100vh - 80px); 
+     padding: 20px 0 0px;
+    /* max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 2rem; */
+
 }
+
+
+        /* Header Navigation */
+        .navbar {
+            width: 100%;
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+ 
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 10px;
+          
+            
+        }
+
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2d5a3d;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4a7c59;
+        }
+
+
 
 /* Header Section */
 .header-section {

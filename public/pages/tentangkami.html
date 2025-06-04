@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../css/tentang.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FoodHive - Kurangi Food Waste, Bagikan Kebaikan</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <title>FoodHive</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/profile.css">
     <link rel="icon" href="/images/favicon.ico" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
@@ -16,16 +17,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
-<link href="../css/faq.css" rel="stylesheet">
-    <title>FoodHive - Berbagi Makanan, Bantu Sesama</title>
   </head>
   <body>
     <!-- Header -->
 
-      <!-- Back Button -->
-    <!-- <button class="back-btn" onclick="goBack()" title="Kembali">
-        <i class="fas fa-arrow-left"></i>
-    </button> -->
+   <nav class="navbar">
+        <div class="nav-container">
+            <div><img src="../images/logo_FoodHive.png" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="../pages/dashboard.html">Beranda</a></li>
+                <li><a href="../pages/tentangkami.html">Tentang Kami</a></li>
+                <li><a href="../pages/donation.html">Mulai Berbagi</a></li>
+                <li><a href="../pages/temanfh.html">Teman FoodHive</a></li>
+                <li><a href="../pages/faq.html">FAQ</a></li>
+            </ul>
+            <a href="../pages/profile.html"> <img src="../images/profile.png" alt="profile"></a>
+           
+        </div>
+    </nav>
 
 
     <!-- Hero Section -->
@@ -59,7 +68,7 @@
     <!-- Why FoodHive Section -->
     <section id="tentang" style="background-color: #2d5a3d; padding: 24px 0px;">
       <div class="container">
-        <h2 style="text-align: center; font-size: 36px; color: white;">Kenapa FoodHive Hadir?</h2>
+        <h2 class="climate-crisis" style="text-align: center; font-size: 36px; color: white;">Kenapa FoodHive Hadir?</h2>
       </div>
     </section>
 
@@ -89,11 +98,11 @@
   border-radius: 10%; display: flex;
   flex-direction: column;
   align-items: center;">
-              <div>SDGs</div>
-              <div>2</div>
+              <div class="climate-crisis">SDGs 2</div>
+
             </div>
-            <h3>Zero Hunger</h3>
-            <p>FoodHive mendukung SDGs dengan cara mengurangi limbah makanan dan menyalurkannya kepada yang membutuhkan. Tujuannya adalah menciptakan dunia tanpa kelaparan, satu donasi makanan dalam satu waktu.</p>
+            <h3 class="climate-crisis">Zero Hunger</h3>
+            <p>FoodHive mendukung SDGs 2 dengan cara mengurangi limbah makanan dan menyalurkannya kepada yang membutuhkan. Tujuannya adalah menciptakan dunia tanpa kelaparan, satu donasi makanan dalam satu waktu.</p>
           </div>
          <img src="../images/food_waste.png" alt="food waste">
             </div>
@@ -103,9 +112,9 @@
     </section>
 
     <!-- Mission Section -->
-    <section class="mission-section">
+    <section class="mission-section" style="background-color: #f0f8f0;">
       <div class="container">
-        <h2>Komitmen FoodHive dengan Mitra</h2>
+        <h2 class="climate-crisis">Komitmen FoodHive dengan Mitra</h2>
         <p>
           FoodHive membangun ekosistem yang sehat berbasis transparansi dan kolaborasi. Kami percaya, kerja sama dengan mitra adalah kunci utama dalam mewujudkan dampak sosial. Setiap mitra kami dukung dengan sistem yang adil, akuntabel,
           dan saling menguntungkan.
@@ -114,19 +123,19 @@
     </section>
 
     <!-- Collaboration Section -->
-    <section class="collab-section">
+    <section class="collab-section" style="background-color: #f0f8f0;">
       <div class="container">
         <div class="collab-items">
           <div class="collab-item">
-            <div class="collab-icon">🔄</div>
+            <div class="collab-icon"> <img src="../images/ic_collaboration.png" alt=""></div>
             <h3>Kolaborasi Setara</h3>
           </div>
           <div class="collab-item">
-            <div class="collab-icon">📈</div>
+            <div class="collab-icon"> <img src="../images/ic_growth.png" alt="icon growth"></div>
             <h3>Kolaborasi Setara</h3>
           </div>
           <div class="collab-item">
-            <div class="collab-icon">✅</div>
+            <div class="collab-icon"><img src="../images/ic_data_check.png" alt=""></div>
             <h3>Kolaborasi Setara</h3>
           </div>
         </div>
@@ -141,8 +150,8 @@
         </div>
       </div>
     </section>
-
   <!-- Footer -->
+    <!-- Footer -->
     <footer class="py-5 text-dark" style="background: #e6f7f8; position: relative; overflow: hidden">
       <!-- Background Gelombang -->
       <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('../images/footer.png') no-repeat top center; background-size: cover; z-index: 0"></div>
@@ -182,6 +191,7 @@
         </div>
       </div>
     </footer>
+
 
     <script>
       // Smooth scrolling for navigation links
@@ -233,6 +243,23 @@
         observer.observe(el);
       });
     </script>
+
+     <script>
+      // Memuat header.html
+      fetch('pages/header.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('header').innerHTML = data;
+        });
+
+      // Memuat footer.html
+      fetch('pages/footer.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
